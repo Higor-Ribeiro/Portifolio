@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+/* ===================== */
+/* Variáveis Globais     */
+/* ===================== */
 :root {
   --cor1: #ffffff;
   --cor2: #94c4ff;
@@ -28,7 +32,8 @@ h1, h2, p {
   font-weight: bold;
   line-height: 1.5em;
 }
-p strong, #frase {
+p strong,
+#frase {
   color: var(--cor5);
 }
 header {
@@ -98,9 +103,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
-.sobre, .projetos, .contato {
+.sobre,
+.projetos,
+.contato {
   width: 95%;
   padding: 15px;
   background-color: var(--cor4);
@@ -108,7 +115,7 @@ main {
 }
 .projetos {
   display: grid;
-  grid-template: repeat(10,1fr) / repeat(3,1fr);
+  grid-template: repeat(10, 1fr) / repeat(3, 1fr);
   gap: 10px;
 }
 .projetos h2 {
@@ -140,10 +147,16 @@ main {
 }
 .contato {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   gap: 5px;
 }
-
+footer {
+  background-color: var(--cor6);
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  padding: 3px;
+}
 @media screen and (max-width: 765px) {
   .projetos {
     grid-template-columns: 1fr;
